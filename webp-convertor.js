@@ -4,10 +4,10 @@
 
   function addImageBox(container) {
     let imageBox = document.createElement("div");
-    let progressBox = document.createElement("div");
+    let progressBox = document.createElement("progress");
     imageBox.appendChild(progressBox);
     container.appendChild(imageBox);
-    progressBox.innerHTML = "<div class="spinner-border text-secondary" role="status">
+    imageBox.innerHTML = "<div class="spinner-border text-secondary" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>"
     return imageBox;
