@@ -26,7 +26,7 @@ form.addEventListener('submit', e => {
   e.preventDefault()
   const value = parseInt(numofpara.value);
   let tempText = text.slice(0, value);
-  tempText = tempText.map(item => `<textarea id="output" class="result form-control">${item}</textarea><label class="form-label" for="output">Output</label>`).join("");
+  tempText = tempText.map(item => `${item}`).join("");
   result.innerHTML = tempText;
 })
 
